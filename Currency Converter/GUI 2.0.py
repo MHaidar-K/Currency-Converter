@@ -24,7 +24,7 @@ dari_jenis= None #variabel simpan jenis mata uang
 ke_jenis= None   #variabel simpan tujuan mata uang
 jumlah= None     #variabel jumlah mata uang
 
-MainURL = f"https://v6.exchangerate-api.com/v6/ae0b219d58482bb39d0ab5fd/latest/USD"
+MainURL = Your API key
 
 
 def asal_uang(*args):
@@ -40,7 +40,7 @@ def amount(*args):
     jumlah = float(jumlah_uang.get())
 
 def convert():
-    url = f"https://v6.exchangerate-api.com/v6/ae0b219d58482bb39d0ab5fd/latest/{dari_jenis}"
+    url = Your API key
     
     response = requests.get(url)
     data = response.json()
